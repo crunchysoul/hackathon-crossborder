@@ -1,0 +1,43 @@
+extends ../layout
+
+block content
+  .page-header
+    h2
+      | Alipay Transaction Page
+    h3
+      | 阿里支付交易页面
+
+  form.form-horizontal(method='POST')
+    input(type='hidden', name='_csrf', value=_csrf)
+    .form-group
+      .col-sm-7
+        input.form-control(type='text', name='services', id='services', placeholder='Search Products 搜索商品', autofocus, required)
+  
+  .btn-group.btn-group-justified
+    a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+      | Search 搜索
+
+  h3
+  table.table.table-striped.table-bordered.table-condensed
+    thead
+      tr
+        th Name
+        th Shop
+        th Product
+        th Price
+      tbody
+        tr
+          td Car
+          td BMW Dealer
+          td BMW M3
+          td $100,000
+
+  form.form-horizontal(method='POST')
+    input(type='hidden', name='_csrf', value=_csrf)
+    .form-group
+      .col-sm-7
+        input.form-control(type='password', name='services', id='services', placeholder='Alipay Purchase Password 阿里支付密码', autofocus, required)
+  
+  .btn-group.btn-group-justified
+    a.btn.btn-primary(href='/api/alibuydone')
+      | BUY 购买

@@ -1,0 +1,40 @@
+extends ../layout
+
+block content
+  h2 Migrant Australia 移民澳洲
+  hr
+
+  .row
+    .col-sm-4
+      // alipay
+      a(href='/api/alipay', style='color: #000')
+        .panel.panel-default(style='background-color: #fff')
+          .panel-body
+            img(src='http://airbank.tech/wp-content/uploads/2017/05/1-4.png', height=40)
+            |  Alipay Services 阿里服务
+    .col-sm-4
+      // nab
+      a(href='/api/upload', style='color: #fff')
+        .panel.panel-default(style='background-color: #000')
+          .panel-body
+            img(src='https://allaboutloans-4f77.kxcdn.com//wp-content/uploads/nab-logo-e1498707018575-768x299.gif', height=40)
+            |  apply New nab Account 申请nab账户
+    .col-sm-4
+      // aud cny exchange rate
+      a(href='/api/nab', style='color: #fff')
+        .panel.panel-default(style='background-color: #000')
+          .panel-body
+            img(src='https://allaboutloans-4f77.kxcdn.com//wp-content/uploads/nab-logo-e1498707018575-768x299.gif', height=40)
+            |  nab Account nab服务
+    .col-sm-4
+      a(href='/api/google-maps', style='color: #fff')
+        .panel.panel-default(style='background-color: #20a360')
+          .panel-body
+            img(src='https://i.imgur.com/Er2ZqgZ.png', height=40)
+            |  nab Branch/ATM location nab网点信息
+    .col-sm-4
+      a(href='/api/upload', style='color: #1565c0')
+        .panel.panel-default(style='background-color: #fff')
+          .panel-body
+            img(src='https://i.imgur.com/UPTzIdC.png', height=40)
+            |  File Upload 文件上传

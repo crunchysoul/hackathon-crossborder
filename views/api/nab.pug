@@ -1,0 +1,33 @@
+extends ../layout
+
+block content
+  .page-header
+    h2
+      | NAB API
+
+  h2
+    i.far.fa-credit-card.fa-sm
+    | nab Balance $ 28,374.25
+  h3
+    i.far.fa-credit-card.fa-sm
+    | nab 账户余额 $ 28,374.25
+
+  .btn-group.btn-group-justified
+    a.btn.btn-primary(href='/api/nabreports')
+      i.fas.fa-money-bill-alt.fa-sm
+      | 账户资讯 Account Information
+
+  br
+  .row
+    .col-sm-6
+      h2 nab Home Loan 澳洲置业:
+      p
+        a.btn.btn-primary(href='/api/realestate', role='button') 房产信息 »
+    .col-sm-6
+      h2 Find a Branch NAB网点:
+      p
+        a.btn.btn-primary(href='/api/google-maps', role='button') NAB网点 »
+    .col-sm-6
+      h2 Services 服务资讯:
+      p
+        a.btn.btn-primary(href='/api/services', role='button') 服务资讯 »

@@ -1,0 +1,100 @@
+extends ../layout
+
+block content
+  .page-header
+    h2
+      | Services List
+    h3
+      | 澳洲生活资讯
+
+  form.form-horizontal(method='POST')
+    input(type='hidden', name='_csrf', value=_csrf)
+    .form-group
+      .col-sm-7
+        input.form-control(type='text', name='services', id='services', placeholder='Search Services 搜索', autofocus, required)
+  
+  .btn-group.btn-group-justified
+    a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+      | Search 搜索
+
+
+  h3
+  table.table.table-striped.table-bordered.table-condensed
+    thead
+      tr
+        th Name
+        th Rating
+        th Type
+        th Address
+        th Contact
+      tbody
+        tr
+          td 商户_1
+          td 4.7
+          td Restaurant
+          td 710 Collins St, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Contact 联系
+
+        tr
+          td 商户_2
+          td 4.6
+          td Restaurant
+          td 310 Flinder St, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Contact 联系
+
+        tr
+          td 商户_3
+          td 4.5
+          td Shop
+          td 130 Sydney Road, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Contact 联系
+
+        tr
+          td 商户_4
+          td 4.4
+          td Entertainment
+          td 555 King St, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Contact 联系
+
+        tr
+          td 商户_5
+          td 4.3
+          td Mall
+          td 429 Queens St, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Contact 联系
+
+        tr
+          td 商户_6
+          td 4.2
+          td Restaurant
+          td 310 Martin Road, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Contact 联系
+
+        tr
+          td 商户_7
+          td 4.2
+          td Restaurant
+          td 210 Brunswick St, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Contact 联系
+

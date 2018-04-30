@@ -1,0 +1,102 @@
+extends ../layout
+
+block content
+  .page-header
+    h2
+      | Ali Merchants List
+    h3
+      | 阿里商家信息
+
+  form.form-horizontal(method='POST')
+    input(type='hidden', name='_csrf', value=_csrf)
+    .form-group
+      .col-sm-7
+        input.form-control(type='text', name='services', id='services', placeholder='Search Services 搜索服务', autofocus, required)
+  
+  .btn-group.btn-group-justified
+    a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+      | Search 搜索
+
+  h3
+  table.table.table-striped.table-bordered.table-condensed
+    thead
+      tr
+        th Name
+        th Rating
+        th Type
+        th Address
+        th Buy 购买
+      tbody
+        tr
+          td 商户_1
+          td 4.7
+          td Car Dealer
+          td 710 Collins St, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='/api/alibuy')
+                | Buy 购买
+
+        tr
+          td 商户_2
+          td 4.6
+          td Restaurant
+          td 310 Flinder St, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Buy 购买
+
+        tr
+          td 商户_3
+          td 4.5
+          td Shop
+          td 130 Sydney Road, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Buy 购买
+
+        tr
+          td 商户_4
+          td 4.4
+          td Entertainment
+          td 555 King St, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Buy 购买
+
+        tr
+          td 商户_5
+          td 4.3
+          td Mall
+          td 429 Queens St, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Buy 购买
+
+        tr
+          td 商户_6
+          td 4.2
+          td Restaurant
+          td 310 Martin Road, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Buy 购买
+
+        tr
+          td 商户_7
+          td 4.2
+          td Restaurant
+          td 210 Brunswick St, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Buy 购买
+
+  .btn-group.btn-group-justified
+    a.btn.btn-primary(href='#')
+      | More 显示更多

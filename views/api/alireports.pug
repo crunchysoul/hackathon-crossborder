@@ -1,0 +1,57 @@
+extends ../layout
+
+block content
+  .page-header
+    h2
+      i.far.fa-credit-card.fa-sm
+      | 阿里信用
+    h3
+      | Alipay Financial Report
+
+  h4  余额 Ali Balance: $ 6,599,212 ;
+  h4  信用 Personal Credit Rating: 优质 Excellent 9.5/10 ;
+  h4  消费记录 Transactions History:
+  br
+
+  table.table.table-striped.table-bordered.table-condensed
+    thead
+      tr
+        th Merchant
+        th Amount
+        th Product
+        th Date Time
+      tbody
+        tr
+          td 商户_1
+          td $40,000
+          td Loan Repayment
+          td 2018-04-22 12:00
+        tr
+          td 商户_2
+          td $30
+          td Food
+          td 2017-04-22 12:01
+        tr
+          td 商户_3
+          td $200
+          td Cloth
+          td 2018-01-22 12:01
+        tr
+          td 商户_4
+          td $100,000
+          td Car
+          td 2013-04-22 12:02
+        tr
+          td 商户_5
+          td $40,000
+          td Loan Repayment
+          td 2013-03-22 12:04
+        tr
+          td 商户_6
+          td $40
+          td Entertainment
+          td 2010-04-22 12:03
+
+  .btn-group.btn-group-justified
+    a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+      | More 显示更多

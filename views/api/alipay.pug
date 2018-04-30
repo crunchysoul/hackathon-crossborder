@@ -1,0 +1,35 @@
+extends ../layout
+
+block content
+  .page-header
+    h2
+      | Alipay API 阿里支付
+
+  h3
+    i.far.fa-credit-card.fa-sm
+    | Ali Balance 阿里账户余额
+  h3
+    | $ 324,456.25
+
+  // .btn-group.btn-group-justified
+  //   a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+  //     i.fas.fa-money-bill-alt.fa-sm
+  //     | Ali Account Information 阿里账户信息
+
+  .row
+    .col-sm-6
+      h3 Ali Personal Financial Report 信用记录
+      p
+        a.btn.btn-primary(href='/api/alireports', role='button') 阿里个人信用记录 »
+    .col-sm-6
+      h3 Alipay Merchants 阿里商户
+      p
+        a.btn.btn-primary(href='/api/alimerchants', role='button') 阿里商户 »
+    .col-sm-6
+      h3 Ali Services 阿里服务
+      p
+        a.btn.btn-primary(href='/api/services', role='button') 阿里服务 »
+    .col-sm-6
+      h3 Ali Cross-Border 阿里出境
+      p
+        a.btn.btn-primary(href='/api/realestate', role='button') 阿里出境 »

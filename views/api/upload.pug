@@ -1,0 +1,33 @@
+extends ../layout
+
+block content
+  .page-header
+    h2
+      i.fas.fa-upload.fa-sm
+      | Documents for New Account
+    h3
+      i.fas.fa-upload.fa-sm
+      | 上传nab开户文件
+
+  .btn-group.btn-group-justified
+    a.btn.btn-success(href='https://github.com/expressjs/multer', target='_blank')
+      i.fas.fa-book.fa-sm
+      | nab how to nab 指南
+    a.btn.btn-success(href='http://codepen.io/search/pens?q=custom+file+upload&limit=all&type=type-pens', target='_blank')
+      i.fas.fa-laptop.fa-sm
+      | more 更多信息
+
+  .row
+    .col-sm-6
+      form(role='form', enctype='multipart/form-data', method='POST')
+        .form-group
+          br
+          input(type='file', name='myFile')
+        button.btn.btn-primary(type='submit') Submit to nab 提交nab
+
+      h3
+        | New Account Instruction 开户指南
+      ol
+        li Step 1, 仂猀呧觖陏鸆楥鈺劦圪瓬杈怭穻杈趓乇抯駃鉏。夬悢忥趼枷灟溠筤优伈峇坌昅囷沇溰屮泑毾萺。Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        li Step 2, 仂猀呧觖陏鸆楥鈺劦圪瓬杈怭穻杈趓乇抯駃鉏。夬悢忥趼枷灟溠筤优伈峇坌昅囷沇溰屮泑毾萺。Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        li Step 3, 仂猀呧觖陏鸆楥鈺劦圪瓬杈怭穻杈趓乇抯駃鉏。夬悢忥趼枷灟溠筤优伈峇坌昅囷沇溰屮泑毾萺。Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.

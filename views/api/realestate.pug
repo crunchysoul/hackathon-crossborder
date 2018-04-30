@@ -1,0 +1,100 @@
+extends ../layout
+
+block content
+  .page-header
+    h2
+      | Real Estate and Home Loan
+    h3
+      | 澳洲置业及贷款
+
+  form.form-horizontal(method='POST')
+    input(type='hidden', name='_csrf', value=_csrf)
+    .form-group
+      .col-sm-7
+        input.form-control(type='text', name='services', id='services', placeholder='Search Property 房产搜索', autofocus, required)
+  
+  .btn-group.btn-group-justified
+    a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+      | Search 搜索
+
+
+  h3
+  table.table.table-striped.table-bordered.table-condensed
+    thead
+      tr
+        th Name
+        th Price
+        th Type
+        th Address
+        th Contact
+      tbody
+        tr
+          td 房产_1
+          td 1.2 Million
+          td House 4 beds 2 baths
+          td 710 Collins St, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Contact 联系
+
+        tr
+          td 房产_2
+          td 1.2 Million
+          td House 4 beds 2 baths
+          td 310 Flinder St, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Contact 联系
+
+        tr
+          td 房产_3
+          td 1.2 Million
+          td House 4 beds 2 baths
+          td 130 Sydney Road, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Contact 联系
+
+        tr
+          td 房产_4
+          td 1.2 Million
+          td House 4 beds 2 baths
+          td 555 King St, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Contact 联系
+
+        tr
+          td 房产_5
+          td 1.2 Million
+          td House 4 beds 2 baths
+          td 429 Queens St, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Contact 联系
+
+        tr
+          td 房产_6
+          td 1.2 Million
+          td House 4 beds 2 baths
+          td 310 Martin Road, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Contact 联系
+
+        tr
+          td 房产_7
+          td 1.2 Million
+          td House 4 beds 2 baths
+          td 210 Brunswick St, Melbourne
+          td
+            .btn-group.btn-group-justified
+              a.btn.btn-primary(href='https://stripe.com/docs/tutorials/checkout')
+                | Contact 联系
+
